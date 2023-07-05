@@ -144,12 +144,13 @@ h1 {
 #btncont{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #addCourse{
     display: block;
   margin-top: 20px;
-  width: 40%;
+  width: 100%;
   background-color: #555555;
   color: white;
   border: none;
@@ -168,12 +169,11 @@ h1 {
 #interchangeColumnsButton{
     display: block;
   margin-top: 20px;
-  width: 40%;
+  width: 100%;
   background-color: #555555;
   color: white;
   border: none;
   padding: 10px;
-  padding-left: 0%;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
@@ -252,9 +252,12 @@ button:hover {
   #btn3 {
     width: 100%;
   }
-  
+
   #addCourse,
-  #interchangeColumnsButton,
+  #interchangeColumnsButton{
+width: 100%;
+  }
+
   #printButton {
     width: 100%;
     margin-bottom: 10px;
@@ -269,6 +272,10 @@ button:hover {
   <section id="gpacal">
   <form id="gpaForm">
     <div><table id="courseTable">
+        <tr>
+            <td>Semester:</td>
+            <td><input type="number" step="0.1" name="extra"></td>
+          </tr>
       <tr>
         <td><b>Credits</b></td>
         <td><b>Grades</b></td>
@@ -396,11 +403,9 @@ button:hover {
     </table>
 </div>
 
-
-    
-    <div id="side"><div id="btncont"><button type="button" id="addCourse">Add Another Course</button>
-
-    <button type="button" id="interchangeColumnsButton">Interchange Columns</button></div>
+    <div id="btncont">
+    <button type="button" id="addCourse">Add Another Course</button>
+    </div>
 
     <div id="btndiv3"><input type="submit" value="Calculate GPA" id="btn3"></div>
     
@@ -409,7 +414,6 @@ button:hover {
   <div id="result"></div>
 
   <div id="prtdiv"><button type="button" id="printButton">Print</button></div>
-</div>
   </section>
 
 
