@@ -149,3 +149,113 @@ p{
         font-size: 16px;
       }
     }
+
+#footerid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #000000;
+    margin-top: 40px;
+}
+
+#cont1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+#cont1 h6{
+    color: #ffffff;
+    padding: 20px;
+    font-size: 15px;
+}
+
+#cont1 a{
+text-decoration: none;
+}
+
+#cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+#bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contribution{
+    padding: 10px;
+}
+
+#contribution h6{
+color: #ffffff;
+font-size: 15px;
+}
+
+#contribution h5{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    }
+
+#myphoto{
+    padding: 10px;
+}
+
+#myphoto img{
+border-radius: 50%;
+}
+
+#mail{
+    padding: 10px;
+}
+
+#mail h6{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#mail h5{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#mail a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    #cont1 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #cont2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #bio {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #myphoto {
+        order: -1;
+      }
+      
+      #insta {
+        padding-top: 20px;
+      }
+    }
+
+
+
+
